@@ -83,10 +83,66 @@ function checkScore(){
         alert('You Won!')
         begin()
     }
-}
+};
+
+// User points added
+
+
+//button 1
+$('#first').on('click', function(){
+
+        userScore = first + userScore;
+        console.log(userScore)
+
+        $(".userscore").html(userScore)
+        checkScore();
+
+
+
+})
+
+//button 2
+$('#second').on('click', function(){
+
+        userScore = second + userScore;
+        console.log(userScore)
+
+        $(".userscore").html(userScore)
+        checkScore();
+
+
+
+})
+//button 3
+$('#third').on('click', function(){
+
+        userScore = third + userScore;
+        console.log(userScore)
+
+        $(".userscore").html(userScore)
+        checkScore();
+
+
+
+})
+//button 4
+$('#fourth').on('click', function(){
+
+        userScore = fourth + userScore;
+        console.log(userScore)
+
+        $(".userscore").html(userScore)
+        checkScore();
+
+
+
+})
+
 
 
 begin()
+
+
 
   
     
