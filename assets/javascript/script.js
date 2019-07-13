@@ -67,8 +67,22 @@ function begin(){
     $(".userscore").html(userScore)
     
 
+}
 
 
+function checkScore(){
+    if(userScore > pcScore){
+        losses++;
+        console.log(losses);
+        alert('You lost!')
+        begin()
+
+    }else if(userScore === pcScore){
+        wins++;
+        console.log(wins);
+        alert('You Won!')
+        begin()
+    }
 }
 
 
