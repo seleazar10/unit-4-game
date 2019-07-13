@@ -28,6 +28,10 @@ function randomNumberGenarator(min, max) {
     
 }
 
+// $('.rec').html('Wins: ' + 'Losses: ')
+$('.rec').html(`<div>Wins: ${wins} </div> <br/>  <div> Losses: ${losses} </div>`)
+
+
 
 function randomGemNumber(){
     var userrandom = Math.floor(Math.random()*11)
@@ -73,14 +77,18 @@ function begin(){
 function checkScore(){
     if(userScore > pcScore){
         losses++;
-        console.log(losses);
+        console.log('losses:' + losses);
         alert('You lost!')
+        $('.rec').html(`<div>Wins: ${wins} </div> <br/>  <div> Losses: ${losses} </div>`)
         begin()
 
     }else if(userScore === pcScore){
         wins++;
-        console.log(wins);
+        console.log('wins:' + wins);
         alert('You Won!')
+        $('.rec').html(`<div>Wins: ${wins} </div> <br/>  <div> Losses: ${losses} </div>`)
+       
+
         begin()
     }
 };
