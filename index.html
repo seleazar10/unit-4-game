@@ -1,47 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eleazar - Collector</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
 
 
 
 </head>
+
 <body>
 
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 text-center">Eleazar Collector</h1>
+        </div>
+    </div>
+
+
+    <!-- direction conainer -->
     <div class="container">
 
-            <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                      <h1 class="display-4 text-center">Eleazar Collector</h1>
-                    </div>
-                  </div>
 
+        <div class="row" style="background-color: aquamarine">
 
-                  <div class="row" style="background-color: aquamarine">
-                        <div class="col">
+            <div class="col p-3 text-center border border-dark">
+                <Strong>Description</Strong>
+            </div>
 
-                            <p>You will be given a random number at the start of the game. There are four crystals below.
-                                    By clicking on a crystal you will add a specific amount of points to your total score.
-                                    You win the game by matching your total score to random number, you lose the game if
-                                    your total score goes above the random number. The value of each crystal is hidden from
-                                    you until you click on it. Each time when the game starts, the game will change the values
-                                    of each crystal</p>
-                          
-                        </div>
-                        
-                      </div>
+        </div>
 
 
 
+
+
+        <div class="col">
+
+            <p>You will be given a random number at the start of the game. There are four crystals below.
+                By clicking on a crystal you will add a specific amount of points to your total score.
+                You win the game by matching your total score to random number, you lose the game if
+                your total score goes above the random number. The value of each crystal is hidden from
+                you until you click on it. Each time when the game starts, the game will change the values
+                of each crystal</p>
+
+        </div>
 
     </div>
 
 
-<script src="assets/javascript/script.js"></script>
+    <!-- score table -->
+
+
+    <div class="container mt-5">
+        <div class="row" style="background-color: aquamarine">
+
+            <div class="col p-3 text-center border border-dark">
+                <p><Strong>Scores</Strong></p>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="row text-center ">
+            <div class="col p-3 border border-dark">Targeted Score</div>
+            <div class="col p-3 border border-dark">Your Score</div>
+            <div class="w-100"></div>
+            <div class="col p-5 border border-dark tgtscore">Column-targetscore</div>
+            <div class="col p-5 border border-dark userscore">Column-yours</div>
+            <div class="w-100"></div>
+            <!-- <div class="col p-1 border border-dark wins">Total wins:</div>
+            <div class="col p-2 border border-dark losses">Total losses:</div> -->
+        </div>
+    </div>
+
+
+
+    <!-- Game -->
+
     
+
+
+
+
+
+
+
+   
+
+
+    <script src="assets/javascript/script.js"></script>
+
 </body>
+
 </html>
